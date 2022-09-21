@@ -13,6 +13,12 @@ public class Employeewage {
 		int fullDayHour = 8;
 		int HalfDayHour = 4;
 		int Salary = 0;
+		int monthlySalry = 0;
+		int WorkingDaysPerMonth = 20;
+	
+		for (int i=1; i<=WorkingDaysPerMonth;i++) {
+			
+		
 		int randomNum = random.nextInt(3);
 		
 		switch(randomNum)
@@ -29,7 +35,9 @@ public class Employeewage {
 			Salary = WagePerHour * HalfDayHour;
 
 		}
+		monthlySalry = monthlySalry * HalfDayHour;
 		System.out.println("Salary is: "+Salary);
-
+		}
+		System.out.println("Total Salary: "+monthlySalry);
 }
 }
